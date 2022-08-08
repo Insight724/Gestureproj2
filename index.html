@@ -1,0 +1,74 @@
+ 
+<html>
+    <head>
+      <title>Gesture to Translation</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+      <center>
+        <h3 class="btn btn-success heading"> Hand Gesture to Result
+          <br>
+          <span>&#9757;</span>
+          <span>&#9996;</span>
+          <span>&#9995;</span>
+          <span>&#128070;</span>
+          <span>&#128071;</span>
+          <span>&#128077;</span>
+        </h3>
+  
+        <br><br>
+  
+        <p style="font-size: 22px;">Snapshot one of the following gestures and learn what they refer to - 
+            <br>
+            <span>&#9757;</span>
+            <span>&#9995;</span>
+            <span>&#128075;</span>
+            <span>&#128077;</span>
+            <span>&#128078;</span>
+            <span>&#128076;</span>
+            <span>&#9996;</span>
+        </p>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label> Webcam - View </label>
+          <div id="camera"></div>
+          <br>
+          <button onclick="takesnapshot();" class="btn btn-primary">Capture Image</button>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction I - </label> 
+        <p class="guess_name" id="result_guess_name"></p>
+        <p class="guess" id="update_guess"></p>
+  
+        <label>Prediction II - </label> 
+        <p class="guess_name" id="result_guess_name2"></p>
+        <p class="guess" id="update_guess2"></p>
+      </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          
+            <label>Snapshot - </label>
+          <div id="result"></div>
+          <br><br>
+          <button class="btn btn-success" onclick="check();">Learn Gesture</button>
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
